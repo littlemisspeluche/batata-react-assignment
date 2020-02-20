@@ -1,38 +1,104 @@
-.App {
+.info-box{
+  background-color: #fff;
+}
+
+.container {
   text-align: center;
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display:flex;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info-box{
+  margin: 0.4em;
+  border-radius: 3px;
+  box-shadow: 1px 2px 7px #ccc;
+  text-align: center;
+  padding: 0 0.3em 0.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.info-box h4 {
+  text-align: left;
+  width: 80%;
+  margin: 1em 0 0.6em 0.45em;
+
+  color: #3DADF3;
+  font-weight: 600;
+}
+
+.categories { width: 17%; }
+.status { width: 20%; }
+.statusChange, .reason {width: 27.15%; }
+
+.scheduleImpact { width: 27%; }
+.addedToReq { width: 26%; }
+.changeAuthor { width: 40%; }
+
+label {
+  float: left;
+  padding: 0 0.5em;
+  text-align: center;
+  font-family: Gill Sans, sans-serif;
+  color: #767B88
+}
+
+.userInput {
+  border: 1px solid #767B88;
+  border-radius: 3px;
+  width: 94%;
+  padding: 0.5em;
+}
+.userInput:hover {
+  border: 1px solid #3DADF3;
+}
+
+.selectMenu {width: 95%; }
+
+.statusChange p {
+  text-align: left;
+  width: 80%;
+  margin-left: 1em;
+  color: #C0C0C0
+}
+
+.submitBtn{
+  background: #3DADF3;
+  border-radius: 3px;
+  width: 10%;
+  font-size: 1em;
   color: white;
+  height: 40px;
+  border: none;
+  margin: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.dateInput{
+  border: none;
+  float: left;
+  width: 90%;
+  margin-left: 0.7em;
+}
+.dateInput::placeholder {
+  color: #d8d8d8;
+}
+input{
+  font-size: 15px;
+  font-family: Gill Sans, sans-serif;
+}
+.reason{
+
+}
+@media (min-width: 480px) and (max-width: 679px) {
+  .categories, .status, 
+  .statusChange, reason, 
+  .scheduleImpact, .addedToReq , .changeAuthor {
+    width: 45%; 
+  }
+  .submitBtn { width: 20%; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
