@@ -53,10 +53,7 @@ function App() {
   }
   
   useEffect(() => {
-    if(formSubmitted){
-
-      postData(data)
-    }
+    formSubmitted && postData(data)
   }, [formSubmitted])
 
   const getAuthorData = (childData) => setAuthorName (childData)
