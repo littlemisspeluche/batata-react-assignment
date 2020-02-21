@@ -1,0 +1,12 @@
+{
+    "details": [{
+    "categories": ["You", "can", "do", "it"],
+    "status": ["positive", "negative", "undecided"],
+    "status_change": "20/11/2020",
+    "reason": "Unclear",
+    "schedule_impact": false,
+    "added": true,
+    "author": "Ron Burgundy"
+    }]
+}
+

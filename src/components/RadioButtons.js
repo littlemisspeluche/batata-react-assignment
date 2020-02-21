@@ -1,11 +1,14 @@
 
 import React, {useState} from 'react'
 
-export default function RadioButtons({initialValue, state}) {
+export default function RadioButtons({initialValue, state, ...props}) {
     const [selection, setSelection] = useState()
-    
+    const sendData = () => {
+      props.parentCallback(selection);
+ }
+ sendData()
     const handleRadioButton = (e) => setSelection(e.currentTarget.value) 
-  
+
     return (
       <div>
        {state ? 

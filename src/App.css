@@ -26,7 +26,6 @@
   text-align: left;
   width: 80%;
   margin: 1em 0 0.6em 0.45em;
-
   color: #3DADF3;
   font-weight: 600;
 }
@@ -34,7 +33,6 @@
 .categories { width: 17%; }
 .status { width: 20%; }
 .statusChange, .reason {width: 27.15%; }
-
 .scheduleImpact { width: 27%; }
 .addedToReq { width: 26%; }
 .changeAuthor { width: 40%; }
@@ -90,8 +88,28 @@ input{
   font-size: 15px;
   font-family: Gill Sans, sans-serif;
 }
-.reason{
 
+.triangle {
+  position: absolute;
+  left: 2em;
+  top: 2.17em;
+  margin: auto;
+  width: 7px;
+  height: 7px;
+  transform: rotate(225deg);
+  border-right: 2.2px solid #89CBF4;
+  border-bottom: 2.2px solid #89CBF4;
+}
+.header{
+  position: relative;
+  margin-bottom: 10px;
+}
+.header h3 {
+  color: #89CBF4;
+  position: relative;
+  top: 1.3em;
+  left: 2.54em;
+  font-weight: 500;
 }
 @media (min-width: 480px) and (max-width: 679px) {
   .categories, .status, 
